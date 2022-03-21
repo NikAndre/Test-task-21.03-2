@@ -1,0 +1,20 @@
+.cellButton{
+    width: 40px;
+    height: 40px;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.cellButtonActive{
+    width: 34px;
+    height: 34px;
+    box-sizing: border-box;
+    background-color: #FFD205;
+    margin: 3px;
+
+    border: 1px solid black;
+    border-radius: 5px;
+}
