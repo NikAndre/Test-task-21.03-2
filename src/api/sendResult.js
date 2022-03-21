@@ -13,7 +13,7 @@ export const sendResultApi = async (firstField, secondField, isWon, attempt) => 
     });
 
     if (attempt < 3) {
-        const newAttempt = attempt + 1
+        const newAttempt = attempt + 1;
         return setTimeout(() => {
             sendResultApi(firstField, secondField, isWon, newAttempt);
         }, 2000);
