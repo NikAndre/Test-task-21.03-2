@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import style from './App.module.css';
-import { FirstField } from "./components/FirstField/Firstfield";
+import { Field } from "./components/FirstField/Firstfield";
 import { sendResultApi } from "./api/sendResult";
 
 function App() {
@@ -41,8 +41,8 @@ function App() {
         <div className={style.App}>
             <div className={style.ticketBlock}>
                 <p>Билет №1</p>
-                <FirstField fieldNumber={1} cellsAmount={19} getFieldsChecked={getFieldsChecked}/>
-                <FirstField fieldNumber={2} cellsAmount={2} getFieldsChecked={getFieldsChecked}/>
+                <Field key={1} fieldNumber={1} cellsAmount={19} getFieldsChecked={getFieldsChecked}/>
+                <Field key={2} fieldNumber={2} cellsAmount={2} getFieldsChecked={getFieldsChecked}/>
                 <button
                     className={style.submitButton}
                     onClick={onSubmitClick}

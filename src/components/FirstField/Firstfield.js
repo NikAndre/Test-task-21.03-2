@@ -2,7 +2,7 @@ import React, {useEffect, useState} from 'react';
 import { Cell } from "../Cell/Cell";
 import style from './Firstfield.module.css';
 
-export const FirstField = ({fieldNumber, cellsAmount, getFieldsChecked}) => {
+export const Field = ({fieldNumber, cellsAmount, getFieldsChecked}) => {
     const cells = [];
     const checkedCellsAmountAprooved = fieldNumber === 1 ? 8 : 1 ;
     const [checkedCells, setCheckedCells] = useState([]);
