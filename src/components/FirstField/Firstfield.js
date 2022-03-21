@@ -29,7 +29,7 @@ export const Field = ({fieldNumber, cellsAmount, getFieldsChecked}) => {
         <div className={style.fieldWrapper}>
             <div className={style.header}>
                 <p>Поле {fieldNumber} </p>
-                <p> Отметьте 8 чисел. </p>
+                <p> Отметьте { fieldNumber === 1 ? '8' : '1' } чисел. </p>
             </div>
             <div className={style.cellWrapper}>
                 {cells.map((number) => {
