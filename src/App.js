@@ -27,7 +27,7 @@ function App() {
 
             if(
                 firstFieldResult.length >= 4 ||
-                (firstFieldResult.length =3 && secondFieldResult.length > 0)
+                (firstFieldResult.length === 3 && secondFieldResult.length > 0)
             ) {
                 sendResultApi(firstFieldChecked, secondFieldChecked, true,1)
                 return alert('Ты победил!');
